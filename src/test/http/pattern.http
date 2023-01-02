@@ -1,0 +1,9 @@
+
+###
+POST http://localhost:8080/pay
+Content-Type: application/json
+
+{
+  "type": 1,
+  "amount": "111"
+}

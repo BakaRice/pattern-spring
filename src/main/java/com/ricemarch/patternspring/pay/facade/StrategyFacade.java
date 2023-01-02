@@ -30,6 +30,15 @@ public class StrategyFacade {
     }
 
     private static StrategyEnum getStrategyEnum(int type) {
-        return null;
+        switch (type) {
+            case 0:
+                return StrategyEnum.ZfbPayStrategy;
+            case 1:
+                return StrategyEnum.WcPayStrategy;
+            case 2:
+                return StrategyEnum.BkPayStrategy;
+            default:
+                return null;
+        }
     }
 }
