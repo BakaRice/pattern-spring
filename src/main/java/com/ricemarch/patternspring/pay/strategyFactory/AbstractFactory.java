@@ -1,4 +1,9 @@
 package com.ricemarch.patternspring.pay.strategyFactory;
 
-public class AbstractFactory {
+import com.ricemarch.patternspring.pay.strategy.PayStrategy;
+import com.ricemarch.patternspring.pay.strategyEnum.StrategyEnum;
+
+public abstract class AbstractFactory {
+
+    abstract PayStrategy getPayStrategy(StrategyEnum strategyEnum);
 }
