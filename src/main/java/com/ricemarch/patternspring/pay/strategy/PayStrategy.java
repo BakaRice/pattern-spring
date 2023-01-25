@@ -11,7 +11,7 @@ public interface PayStrategy {
 
     Boolean pay(PayBody payBody);
     //    之所以使用interface，是因为我们的所有的策略接口下的方法都需要复写的。
-//    没有公共的、可重用的方法。
+    //    没有公共的、可重用的方法。
 
     /*
       abstract class

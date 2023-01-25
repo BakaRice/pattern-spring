@@ -7,7 +7,7 @@ public enum StrategyEnum {
 
     BkPayStrategy("com.ricemarch.patternspring.pay.strategy.BkPayStrategy");
 
-    String value = "";
+    final String value;
 
     public String getValue() {
         return value;
@@ -15,5 +15,14 @@ public enum StrategyEnum {
 
     StrategyEnum(String value) {
         this.value = value;
+    }
+
+    public static StrategyEnum getStrategyEnum(int type) {
+        return switch (type) {
+            case 0 -> StrategyEnum.ZfbPayStrategy;
+            case 1 -> StrategyEnum.WcPayStrategy;
+            case 2 -> StrategyEnum.BkPayStrategy;
+            default -> null;
+        };
     }
 }
