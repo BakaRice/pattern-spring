@@ -19,6 +19,7 @@ public class UserService {
 
         UserInfo userInfo = getUserInfo(username);
         List<String> results = new ArrayList<>();
+        // 可以发现调用方，完全无需关心任何handler,完全与其解耦
         suggestRequirementHandleProcess.process(userInfo, results);
         return results;
     }
