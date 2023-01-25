@@ -8,3 +8,6 @@ content-type: application/json
   "product": "A",
   "amount": 10
 }
+
+### suggest
+GET http://localhost:8080/suggest?username=rice
